@@ -1,0 +1,92 @@
+.background {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/rabbit2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    display: inline-block;
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.left {
+    display: inline-block;
+    width: 95%;
+    height: 250px;
+    float: left;
+    border-radius: 20px;
+    border: 4px solid #111;
+}
+.right {
+    display: inline-block;
+    width: 5%;
+    margin: 70px 0;
+    padding: 53px 0;
+    border: 2px solid;
+    float: left;
+    background-color: #111;
+}
+.bar {
+    display: inline-block;
+    width: 19.62%;
+    height: 242px;
+    background-color: green;
+    animation-name: bar;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.left-side {
+    border-radius: 15px 0 0 15px;
+
+}
+.right-side,
+.right {
+    border-radius: 0 15px 15px 0;
+}
+@keyframes bar {
+    0%{
+    width: 2%;
+    opacity: 1;
+    border-radius: 15px 0 0 15px;
+    background-color: red;
+    }
+    40%{
+        background-color: orangered;
+    }
+    60% {
+        background-color: yellow;
+    }
+    80% {
+        background-color: yellowgreen;
+    }
+    100%{
+    width: 100%;
+    opacity: 1;
+    border-radius: 15px;
+    }
+}
+
+.one {
+}
+/* .two {
+    background-color: orangered;
+}
+.three {
+    background-color: yellow;
+}
+.four {
+    background-color: yellowgreen;
+}
+.five {
+    background-color: green;
+} */
