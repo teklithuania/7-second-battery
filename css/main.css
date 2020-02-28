@@ -53,13 +53,13 @@
 .four,
 .five {
     opacity: 0;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-play-state: running;
     animation-direction: alternate;
 }
 .one {
-    animation-name: one;
+    animation-name: one, kkk;
 }
 @keyframes one {
     0%{
@@ -70,7 +70,7 @@
    }
 }
 .two {
-    animation-name: two;
+    animation-name: two, kkk;
 }
 @keyframes two {
     0%,20%{
@@ -81,7 +81,7 @@
     }
 }
 .three {
-    animation-name: three;
+    animation-name: three, kkk;
 }
 @keyframes three {
     0%,40%{
@@ -92,7 +92,7 @@
     }
 }
 .four {
-    animation-name: four;
+    animation-name: four, kkk;
 }
 @keyframes four {
     0%,60%{
@@ -103,7 +103,7 @@
     }
 }
 .five {
-    animation-name: five;
+    animation-name: five, kkk;
 }
 @keyframes five {
     0%,80%{
@@ -112,17 +112,20 @@
     100%{
         opacity: 1;
     }
-    
 }
-@keyframes one two three four five {
+
+@keyframes kkk {
     0%{
+        background-color: red;
+    }
+    20%{
     background-color: red;
     }
     40%{
         background-color: orangered;
     }
     60% {
-        background-color: yellow;
+        background-color: orange;
     }
     80% {
         background-color: yellowgreen;
@@ -130,4 +133,5 @@
     100%{
     background-color: green;
     }
+    
 }
