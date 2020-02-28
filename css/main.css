@@ -37,13 +37,6 @@
     width: 19.62%;
     height: 242px;
     background-color: green;
-    animation-name: bar;
-    animation-duration: 40s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-play-state: running;
 }
 .left-side {
     border-radius: 15px 0 0 15px;
@@ -53,11 +46,76 @@
 .right {
     border-radius: 0 15px 15px 0;
 }
-@keyframes bar {
+
+.one,
+.two,
+.three,
+.four,
+.five {
+    opacity: 0;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+}
+.one {
+    animation-name: one;
+}
+@keyframes one {
     0%{
-    width: 2%;
+        opacity: 0;
+    }
+    20%,100%{
     opacity: 1;
-    border-radius: 15px 0 0 15px;
+   }
+}
+.two {
+    animation-name: two;
+}
+@keyframes two {
+    0%,20%{
+        opacity: 0;
+    }
+    40%,100%{
+        opacity: 1;
+    }
+}
+.three {
+    animation-name: three;
+}
+@keyframes three {
+    0%,40%{
+        opacity: 0;
+    }
+    60%,100%{
+        opacity: 1;
+    }
+}
+.four {
+    animation-name: four;
+}
+@keyframes four {
+    0%,60%{
+        opacity: 0;
+    }
+    80%,100%{
+        opacity: 1;
+    }
+}
+.five {
+    animation-name: five;
+}
+@keyframes five {
+    0%,80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes one two three four five {
+    0%{
     background-color: red;
     }
     40%{
@@ -70,23 +128,6 @@
         background-color: yellowgreen;
     }
     100%{
-    width: 100%;
-    opacity: 1;
-    border-radius: 15px;
+    background-color: green;
     }
 }
-
-.one {
-}
-/* .two {
-    background-color: orangered;
-}
-.three {
-    background-color: yellow;
-}
-.four {
-    background-color: yellowgreen;
-}
-.five {
-    background-color: green;
-} */
